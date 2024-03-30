@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/styleNavbar.css">  
-    <link rel="stylesheet" href="/assets/css/styleComptable.css">
+    <link rel="stylesheet" href="/assets/css/styleEtudiant.css">
     <title>Information Etudiant</title>
     
 </head>
@@ -96,63 +96,95 @@
                       <button type="button" class="card-columns btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                         <i class="fa fa-plu iconb"></i> Ajouter Paiement
                       </button>
-                  </div>
+                    </div>
                     <p class="card-columns">Filière : 4ième Année Génie Informatique</p>
-                    <form class="form-inline">
-                      <div class="form-group mb-2">
-                        <label for="input1" class="sr-only">CNE</label>
-                        <input type="password" class="form-control" id="input1" placeholder="CNE">
-                      </div>
-                      <div class="form-group mx-sm-3 mb-2">
-                        <label for="input2" class="sr-only">Nom & Prénom</label>
-                        <input type="password" class="form-control" id="input2" placeholder="Nom & Prénom">
-                      </div>
-                      <div class="form-group mx-sm-3 mb-2">
-                        <label for="input3" class="sr-only">Filière</label>
-                        <input type="password" class="form-control" id="input3" placeholder="Filière">
-                      </div>
-                      <button type="submit" class="btn btn-primary mb-2">Filtrer</button>
-                    </form>                  
+
+                    <hr />
+                  
                   <!-- Modal -->
                   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                          <div class="modal-content">
-                              <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                  </button>
-                              </div>
-                              <div class="modal-body">
-                                <div class="form-group">
-                                  <label for="exampleFormControlInput1">Mode de paiement</label>
-                                    <select class="form-control ">
-                                      <option>Paiement par espece</option>
-                                      <option>Paiement par virement</option>
-                                      <option>Paiement par chèque</option>
-                                    </select>
-                                  </div>
-                                  <div class="form-group">
-                                    <label for="exampleFormControlInput1">Type de paiement</label>
-                                      <select class="form-control ">
-                                        <option>Paiement par mois</option>
-                                      <option>Paiement par semestre</option>
-                                      <option>Paiement par année</option>
-                                      </select>
-                                    </div>
-
-                                    <div class="form-group">
-                                      <label for="exampleInputEmail1">Montant</label>
-                                      <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Montant">
-                                    </div>
-                              </div>
-                              <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  <button type="button" class="btn btn-primary">Save changes</button>
-                              </div>
-                          </div>
-                      </div>
-                  </div>                  
+                      <div class="modal-dialog modal-dialog-centered  modal-xl">
+                          <div class="">
+                            <div class=" containerpai d-md-flex align-items-center"> 
+                                <div class="card box1 shadow-sm p-md-5 p-md-5 p-4 "> 
+                                    <div class="fw-bolder mb-4">
+                                        <span class="fas fa-dollar-sign"></span>
+                                        <span class="ps-1">599,00</span>
+                                    </div> 
+                                    <div class="d-flex flex-column"> 
+                                        <div class="d-flex align-items-center justify-content-between text"> 
+                                            <span class="">Réduction</span> 
+                                            <span class="fas fa-dollar-sign"><span class="ps-1">100</span>
+                                        </span> 
+                                    </div> 
+                                    <div class="d-flex align-items-center justify-content-between text mb-4"> 
+                                        <span>Total</span> 
+                                        <span class="fas fa-dollar-sign"><span class="ps-1">600.99</span></span> 
+                                    </div> 
+                                    <div class="border-bottom mb-4"></div> 
+                                    <div class="d-flex flex-column mb-4"> 
+                                        <span class="far fa-file-alt text">
+                                            <span class="ps-2">Invoice ID:</span>
+                                        </span> 
+                                        <span class="ps-3">SN8478042099</span> 
+                                    </div> <div class="d-flex flex-column mb-5"> 
+                                        <span class="far fa-calendar-alt text">
+                                            <span class="ps-2">Prochain Paiement:</span>
+                                        </span> 
+                                        <span class="ps-3">22 july,2018</span> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                            <div class="card box2 shadow-sm"> 
+                                <div class="d-flex align-items-center justify-content-between p-md-5 p-4"> 
+                                    <span class="h5 fw-bold m-0">Paiement par carte Bancaire </span> 
+                                </div> 
+                                <form action=""> 
+                                    <div class="row"> 
+                                        <div class="col-12"> 
+                                            <div class="d-flex flex-column pe-md-5 px-md-0 px-4 mb-4"> 
+                                                <span>Nom & Prénom</span> <div class="inputWithIcon"> 
+                                                    <input class="form-control text-uppercase" type="text" value="EL GOURAINI Oumaima"> 
+                                                    <span class="far fa-user"></span> 
+                                                </div> 
+                                            </div> 
+                                        </div> 
+                                        <div class="col-12"> 
+                                            <div class="d-flex flex-column pe-md-5 px-md-0 px-4 mb-4"> 
+                                                <span>N° de Carte</span> <div class="inputWithIcon"> 
+                                                    <input class="form-control text-uppercase" type="text" value="1297390092666299912"> 
+                                                    <span class="far fa-credit-card"></span> 
+                                                </div> 
+                                            </div> 
+                                        </div> 
+                                        <div class="col-12"> 
+                                            <div class="d-flex flex-column ps-md-5 px-md-0 px-4 mb-4"> 
+                                                <span>Date d'expiration</span> 
+                                                <div class="inputWithIcon"> <input type="text" class="form-control" value="05/20"> 
+                                                    <span class="fas fa-calendar-alt"></span> 
+                                                </div> 
+                                            </div> 
+                                        </div> 
+                                        <div class="col-12"> 
+                                            <div class="d-flex flex-column pe-md-5 px-md-0 px-4 mb-4"> 
+                                                <span>Code CVV</span> 
+                                                <div class="inputWithIcon"> 
+                                                    <input type="password" class="form-control" value="123"> 
+                                                    <span class="fas fa-lock"></span> 
+                                                </div> 
+                                            </div> 
+                                        </div> 
+                                        <div class="col-12 px-md-5 px-4 mt-3"> 
+                                            <div class="btn btn-primary w-100">Payer $599.00</div> 
+                                        </div> 
+                                    </div> 
+                                </form> 
+                            </div>
+                          </div> 
+                        </div>
+                      </div> </div>                
+                  
+                                    
                     <table class="table">
                       <thead>
                         <tr>
